@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">未来日记</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="top_text_hint">Hi, have a nice day !!</string>
+    <string name="button_save">圣者度人强者度己</string>
+    <string name="button_count_time">阅历</string>
+
+</resources>

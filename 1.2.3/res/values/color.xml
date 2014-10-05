@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_count_time_root_view">#D8E0D8</color>
+    <!-- 非常经典的乔布斯时代苹果系统背景色 -->
+    <color name="background_main_activity">#D8DBD8</color>
+    <!-- 日历编辑界面背景 -->
+    <color name="background_main_activity_edittext">#2B302B</color>
+    <!-- 日历编辑框背景 -->
+
+</resources>

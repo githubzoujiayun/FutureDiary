@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_count_time_root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_main_activity"
+    android:orientation="vertical" >
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/customerscrollview_show_top_text"
+        android:layout_alignParentTop="true" />
+
+    <com.qiuyongchen.futurediary.CustomerScrollView
+        android:id="@+id/customerscrollview_show_top_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editText_edit_text"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_show_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_show_top_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/top_text_hint"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </com.qiuyongchen.futurediary.CustomerScrollView>
+
+    <EditText
+        android:id="@+id/editText_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="175dip"
+        android:layout_above="@+id/button_save"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edittext_edit_text_background"
+        android:ems="10"
+        android:gravity="center_vertical|top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/background_main_activity_edittext"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_save"
+        android:paddingBottom="15dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="15dp"
+        android:text="@string/button_save"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_count_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_count_time"
+        android:paddingBottom="15dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="15dp"
+        android:text="@string/button_count_time"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
