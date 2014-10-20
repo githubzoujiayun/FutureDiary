@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_learning_time_root_view">#D8E0D8</color>
+    <!-- 非常经典的乔布斯时代苹果系统背景色 -->
+
+    <color name="background_main_activity">#F8F8F8</color>
+    <!-- 日记主界面背景 -->
+
+    <color name="background_main_activity_actionbar">#4A95CE</color>
+    <!-- 日记动作栏背景 -->
+
+    <color name="background_main_activity_dividingline_between_actionbar_and_textview">#3B77A5</color>
+    <!-- 日记动作栏和日记显示栏间的分割线颜色 -->
+
+    <color name="background_main_activity_deividingline_between_textview_and_edittext">#C6C6C6</color>
+    <!-- 日记编辑框背景 -->
+
+
+    <color name="background_main_activity_edittext">#F8F8F8</color>
+    <!-- 日记编辑框背景 -->
+
+    <color name="text_edittext_main_activity">#8F8F8F</color>
+    <!-- 日记编辑框字体颜色 -->
+
+    <color name="text_textview_main_activity">#777778</color>
+    <!-- 日记显示框字体颜色 -->
+
+</resources>

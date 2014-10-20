@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res/com.qiuyongchen.futurediary"
+    android:id="@+id/RelativeLayout_count_time_root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_learning_time_root_view"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.qiuyongchen.futurediary.ProgressWheel
+        android:id="@+id/spinner_time_spin"
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:layout_centerInParent="true"
+        ProgressWheel:barColor="#0097D6"
+        ProgressWheel:barLength="10dp"
+        ProgressWheel:barWidth="3dp"
+        ProgressWheel:rimColor="#330097D6"
+        ProgressWheel:rimWidth="1dp"
+        ProgressWheel:textColor="@color/text_edittext_main_activity"
+        ProgressWheel:textSize="14sp" />
+
+    <Chronometer
+        android:id="@+id/chronometer_learning_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:format="%s"
+        android:textColor="@color/text_textview_main_activity"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_time_had_gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner_time_spin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:text="@string/layout_learing_time_textview_the_time_had_gone"
+            android:textColor="@color/text_textview_main_activity" />
+
+        <TextView
+            android:id="@+id/textView_the_time_had_gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/layout_learning_time_textview_the_time_had_gone_hint"
+            android:textColor="@color/text_textview_main_activity" />
+    </LinearLayout>
+
+</RelativeLayout>

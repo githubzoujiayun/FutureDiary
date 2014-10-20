@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_count_time_root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_main_activity"
+    android:orientation="vertical" >
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_edit_text"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_contain_actionbar_and_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RelativeLayout_as_dividingLine_between_textview_and_edittext" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_as_actionbar_and_divideLine"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/background_main_activity_actionbar"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/divideLine_between_actionbar_textview"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/background_main_activity_dividingline_between_actionbar_and_textview" >
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.qiuyongchen.futurediary.DampingScrollView
+            android:id="@+id/dampingscrollview_show_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/RelativeLayout_as_actionbar_and_divideLine" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout_show_top_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_show_top_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/layout_MainActivity_top_text_hint"
+                    android:textColor="@color/text_textview_main_activity"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </com.qiuyongchen.futurediary.DampingScrollView>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_above="@+id/RelativeLayout_as_dividingLine_between_edittext_and_button"
+        android:layout_marginBottom="3dp"
+        android:background="@color/background_main_activity_edittext"
+        android:ems="10"
+        android:gravity="center_vertical|top"
+        android:inputType="textMultiLine"
+        android:paddingBottom="12dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/text_edittext_main_activity"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_save"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/layout_MainActivity_button_save"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_learing_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_count_time"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/layout_MainActivity_button_learning_time"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_as_dividingLine_between_edittext_and_button"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/button_save"
+        android:layout_marginBottom="5dp"
+        android:background="@color/background_main_activity_actionbar" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_as_dividingLine_between_textview_and_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/editText_edit_text"
+        android:background="@color/background_main_activity_deividingline_between_textview_and_edittext" >
+    </RelativeLayout>
+
+</RelativeLayout>

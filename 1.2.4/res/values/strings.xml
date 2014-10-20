@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">未来日记</string>
+    <string name="layout_MainActivity_top_text_hint">Hi, have a nice day !!</string>
+    <string name="layout_MainActivity_button_save">圣者度人</string>
+    <string name="layout_MainActivity_button_learning_time">学习时长</string>
+    <string name="layout_learning_time_textview_before_chronometer_time_is_going">时间已经流逝了近乎：</string>
+    <string name="layout_learning_time_textview_before_chronometer_quiet">悄悄地</string>
+    <string name="layout_learing_time_textview_the_time_had_gone">禁术！岁月累计:</string>
+    <string name="layout_learning_time_textview_the_time_had_gone_hint">..</string>
+
+</resources>
